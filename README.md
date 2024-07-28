@@ -1,3 +1,6 @@
+# Project link
+http://www.capstone.cse.msu.edu/2024-01/projects/amazon/
+
 # Employee Badge Image Validation Tool
 CSE 498 Capstone Spring 2024 
 
