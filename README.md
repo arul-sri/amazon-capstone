@@ -1,5 +1,6 @@
 # Project link
 http://www.capstone.cse.msu.edu/2024-01/projects/amazon/
+# AWS ACCOUNT HAVE BEEN SUSPENDED
 
 # Employee Badge Image Validation Tool
 CSE 498 Capstone Spring 2024 
