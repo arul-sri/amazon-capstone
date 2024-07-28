@@ -1,0 +1,31 @@
+/* This declares the regular Amazon font */
+@font-face {
+    font-family: 'AmazonEmber';
+    src: url('../../webfonts/AmazonEmber_W_Rg.woff2') format('woff2');
+}
+
+/* This declares the bold Amazon font */
+@font-face {
+    font-family: 'AmazonEmber-Bold';
+    src: url('../../webfonts/AmazonEmber_W_Bd.woff2') format('woff2');
+}
+
+/* This declares the light Amazon font */
+@font-face {
+    font-family: 'AmazonEmber-Light';
+    src: url('../../webfonts/AmazonEmber_W_Lt.woff2') format('woff2');
+}
+
+/* Setting entire body of document to regular Amazon font for now
+We can add the bold font and light fonts as well */
+body {
+    font-family: 'AmazonEmber';
+}
+
+.requirements-banner {
+    font-family: 'AmazonEmber-Bold';
+}
+
+.ex_desc {
+    font-family: 'AmazonEmber';
+}

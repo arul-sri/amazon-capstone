@@ -1,0 +1,72 @@
+.list-view-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between items */
+  }
+  
+  .list-view-item {
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    align-self: center;
+  }
+
+  .NoImages {
+    align-self: center;
+  }
+
+  .list-view-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+  }
+  
+  
+  .list-view-header {
+    margin-bottom: 1rem;
+  }
+  
+  .list-view-email, .list-view-description {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+  
+  .list-view-image-container {
+    text-align: center; /* Center the image */
+  }
+  
+  .list-view-image {
+    max-width: 25%; /* Make image responsive */
+    height: auto;
+    border-radius: 4px; /* Optional: rounded corners for the images */
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center; /* Horizontally center the children */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Search input styling */
+  .search {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: border-color 0.3s;
+    /* The width can be a percentage or fixed depending on your design needs */
+    width: 50%; /* Adjust this to fit your design preference */
+  }
+  
+  .search:focus {
+    outline: none;
+    border-color: #ff9900; /* Amazon's brand color for focus state */
+    box-shadow: 0 0 8px rgba(255,153,0,0.3);
+  }

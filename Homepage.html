@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Team Amazon">
+    <meta name="description" content="Amazon: Employee Badge Image Validation Tool">
+    <title>Employee Badge Image Validation Tool</title>
+    <link rel="stylesheet" type="text/css" href="/header.css" />
+</head>
+
+<body>
+    <article>
+        <!-- The header  -->
+        <header>
+            <!-- Header Content goes here -->
+            <ul class="header-content">
+                <li class="header-title"><p>Amazon Picture</p></li>
+            </ul>
+        </header>
+        <!-- The navigation bar -->
+        <nav>
+            <!-- Nav bar content -->
+            <div>Employee Badge Image Validation Tool</div>
+        </nav>
+        <!-- The main content  -->
+        <main>
+            <div>
+                <div>
+                    <h1>Photo requirement</h1>
+                    <ul>
+                        <li>Look straight into the camera</li>
+                        <li>Include the top of your head to mid-chest</li>
+                        <li>Photo is properly exposed with no shadows</li>
+                        <li>Daily religious attire is acceptable</li>
+                        <li>Background of the photo should be white</li>
+                        <li>Avoid sunglasses</li>
+                        <li>Avoid caps & hats</li>
+                        <li>Avoid tilting your head up</li>
+                        <li>Avoid cropping from a larger image</li>
+                        <li>Avoid full-length images</li>
+                        <li>Avoid taking a photograph of another photograph</li>
+                    </ul>
+                </div>
+                <!-- File input button -->
+                <div>
+                    <label for="fileInput">Select Photo:</label>
+                    <input type="file" id="fileInput" name="fileInput" accept=".jpg, .jpeg, .png, .gif, .bmp">
+                </div>
+                <div>
+                    <!-- Display selected image -->
+                    <img id="selectedImage" alt="Selected Image">
+                </div>
+            </div>
+        </main>
+        <!-- The footer of the file -->
+        <footer>
+            <p>© 2024 Team Amazon</p>
+        </footer>
+    </article>
+
+    <!-- Include the external script -->
+    <script src="Homepage.js"></script>
+</body>
+
+</html>

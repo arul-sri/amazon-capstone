@@ -1,0 +1,79 @@
+.login-button {
+    color: #ffffff;  
+    font-size: large;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: #222;
+}
+
+.login-container {
+    width: 38vw;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 0.2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5vw;
+}
+.login-container h2 {
+    text-align: center;
+}
+.login-container input[type="email"],
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="submit"] {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 0.1em solid #ccc;
+    border-radius: 0.2em;
+    box-sizing: border-box; /* To include padding and border in element's total width and height */
+}
+.login-container input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+.login-container input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    /* align-items: center;
+    gap: 10px; */
+}
+
+.info_icon, .account-exists-button {
+    padding: 10px 15px; /* Adjust padding to your preference */
+    /* Rest of your button styling */
+    width: auto;
+}
+
+.account-exists-button {
+    background: none; /* Removes any background */
+    border: none; /* Removes the border */
+    color: #007185; /* Sets the text color; you can choose what you like */
+    font-family: 'AmazonEmber', Arial, sans-serif; /* Sets the font; should match your design */
+    cursor: pointer;
+    text-decoration: underline; /* Underlines the text to indicate it's clickable */
+    /* margin: 1em auto; Center the button horizontally */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+.account-exists-button:hover {
+    color: #C7511F; /* Darker shade for hover state; adjust as per your design */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+  }
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .login-container {
+        width: 45vw;
+    }
+}

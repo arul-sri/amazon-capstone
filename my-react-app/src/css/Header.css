@@ -1,0 +1,143 @@
+/* Change body margin so content spans whole screen */
+body {
+    margin: 0px;
+}
+
+.header-list-element {
+    padding: 15px;
+    list-style: none;
+}
+
+/* Top Header Banner Styling */
+/* Flexes the header elements in row form */
+/* Places logo on left and site title on right */
+.header-content {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #232f3e;
+    list-style-type: none;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-banner {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    height: 39px;
+    justify-content: flex-end;
+    background-color: #fbfbfb;
+    align-items: center;
+
+}
+
+.amazon-image {
+    width: auto;
+    height: 35px;
+}
+
+.header-title {
+    color: #ff9900;
+    font-size: large;
+}
+
+#username {
+    color: #000000;
+    font-size: large;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'AmazonEmber-Bold';
+}
+
+.amazon-link {
+    color: #000000;
+    font-size: large;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: 'AmazonEmber-Bold';
+}
+
+.amazon-link:hover {
+    color: #ff9900;
+}
+
+.amazon-link-dropdown {
+    background-color: #ff9900; /* Amazon's orange color */
+    color: #000000;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    font-family: 'AmazonEmber-Bold';
+}
+
+.amazon-link-dropdown:hover {
+    background-color: #E68A00; /* A darker orange on hover */
+}
+
+.amazon-link-dropdown:focus {
+    border-color: #F90;
+    box-shadow: 0 0 3px 2px rgba(255, 153, 0, 0.5); /* Orange glow for focus */
+}
+
+.lang-element {
+    padding-left: 15px;
+    list-style: none;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-top: 2px;
+    border-top: 8px solid #ffffff;
+}
+
+.lang-drop-down {
+    padding-left: 6px;
+    padding-right: 15px;
+    list-style: none;
+}
+
+.welcome_statement {
+    text-align: left;
+    margin: 0px;
+    height: 170px;
+    background-image: url('../images/gradient.png');
+    padding-bottom: 3px;
+}
+
+.welcome_text_container {
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.welcome_text_two {
+    margin: 0;
+    color: #ffffff;
+    border-left: 10px;
+    padding-top: 5px;
+    padding-left: 25px;
+}
+
+.welcome_text {
+    margin: 0;
+    color: #ffffff;
+    border-left: 10px;
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .welcome_statement {
+        height: auto;
+    }
+}

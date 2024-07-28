@@ -1,0 +1,116 @@
+#fileInput {
+    display: none; /* Hide the default file input */
+}
+
+.label-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    width: 33.33vw;
+    margin-right: auto;
+    margin-left: 20vw;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 50vw;
+    max-width: 50vw;
+    max-height: 50vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container canvas {
+    position: absolute;
+    top: calc(1vw + 2vw); /* Same spacing from the hole punch */
+    left: 0;
+    width: 100%;
+    height: auto;
+    max-height: calc(100% - (1vw + 2vw) * 2);
+    object-fit: contain;
+}
+
+.punch-hole {
+    position: absolute;
+    top: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6vw;
+    height: 1vw;
+    background-color: #fff;
+    border-radius: 35%;
+    border: 4px solid #f90;
+
+}
+
+.image-container.no-image {
+    background-color: lightgrey; /* Applied only when there is no image */
+}
+
+.label-text {
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: 'AmazonEmber-Bold';
+}
+
+#selectedImage {
+    width: auto; /* Width will be auto to maintain aspect ratio */
+    height: 25vw; /* Set a constant height for all images */
+    object-fit: contain; /* Maintain the aspect ratio */
+    background: white; /* Use a white background to blend with the page */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Optional: Adds a subtle shadow */
+    border: 1px solid #ddd; /* Optional: Adds a subtle border */
+    border-radius: 5px; /* Optional: Rounds the corners */
+    display: block; /* Display block to avoid inline default of img */
+    margin: 0 auto; /* Center the image in the container */
+}
+
+/* Styling for the file input button to resemble Amazon's styling */
+#fileInputLabel {
+    /* background-image: linear-gradient(#fbe1a1, #f0b94b); Amazon's button color */
+    color: #111; /* Text color */
+    padding: 10px 20px;
+    /* border: 1px solid #a0772b; Amazon's button border color */
+    background: #f90;
+    border: 2px solid #f90;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#fileInputLabel:hover {
+    background-image: linear-gradient(#fbe1a1, #e1ae48); /* Darker color on hover */
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .label-container {
+        justify-content: center;
+        margin-left: auto;
+    }
+
+    .punch-hole {
+        display: none !important; /* Hide the punch hole in mobile view */
+    }
+
+    .image-container {
+        box-shadow: none !important;
+        background-image: none !important;
+        border-radius: 0 !important;
+        border: none !important;
+    }
+
+    .image-container canvas {
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}

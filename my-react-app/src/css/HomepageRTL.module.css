@@ -1,0 +1,121 @@
+.homepage_rtl_container {
+    text-align: right;
+}
+
+/* Flipping image for RTL */
+.welcome_statement {
+    margin: 0px;
+    height: 170px;
+    background-image: url('../images/gradient.png');
+    transform: scaleX(-1);
+    padding-bottom: 3px;
+}
+
+.welcome_text {
+    margin: 0;
+    color: #ffffff;
+    border-right: 10px;
+    transform: scaleX(-1);
+    font-size: 2em;
+}
+
+.welcome_text_two {
+    margin: 0;
+    color: #ffffff;
+    border-right: 10px;
+    padding-top: 5px;
+    padding-right: 25px;
+    transform: scaleX(-1);
+}
+
+.info_icon {
+    height: 1.5em;
+    background: #f90;
+    border: 2px solid #f90;
+    border-radius: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    cursor: pointer;
+    font-family: 'AmazonEmber-Bold';
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.req_desc {
+    float: right;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+.unfulfilled {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    align-items: center;
+}
+
+.requirements {
+    display: flex-end;
+    flex-direction: column;
+    margin-right: 1em;
+}
+
+.rqrmnt_section .requirements img {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.rqrmnt_section .rqrmnt_title{
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+.rqrmnt_notes{
+    font-size: 1.2em;
+    margin-right: 1em;
+}
+
+.img_container {
+    flex: 2 1;
+    align-items: baseline;
+}
+
+.desc_container {
+    flex: 21;
+    align-items: center;
+}
+
+.example_container {
+    padding-top: 15px;
+    padding-right: 25px;
+}
+
+.ex_img {
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.ex_desc {
+    font-family: 'AmazonEmber';
+    width: 50%;
+    height: 80%;
+    font-size: 1.2em;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .welcome_statement {
+        height: auto;
+    }
+}

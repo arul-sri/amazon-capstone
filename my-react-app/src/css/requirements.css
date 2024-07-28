@@ -1,0 +1,144 @@
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    /* width: 100%; */
+    align-self: center;
+}
+
+.example_container {
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.info_icon {
+    height: 1.5em;
+    /* background-image: linear-gradient(#fbe1a1, #f0b94b);
+    border: 1px solid #a0772b; */
+    background: #f90;
+    border: 2px solid #f90;
+    border-radius: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    cursor: pointer;
+    font-family: 'AmazonEmber-Bold';
+}
+
+#submitButtons {
+    margin-top:25vw;
+}
+
+.submit_icon {
+    height: 2em;
+    /* background-image: linear-gradient(#fbe1a1, #f0b94b);
+    border: 1px solid #a0772b; */
+    background: #f90;
+    border: 2px solid #f90;
+    border-radius: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    cursor: pointer;
+    font-family: 'AmazonEmber-Bold';
+}
+
+.info_icon:hover {
+    background-image: linear-gradient(#fbe1a1, #e1ae48); /* Darker color on hover */
+}
+
+.rqrmnt_section {
+    width: 50vw;
+    margin-left: 1em;
+}
+
+.rqrmnt_section .requirements img {
+    width: 1.4em;
+    height: 1.4em;
+}
+
+.requirements {
+    display: flex;
+    flex-direction: column;
+}
+
+.unfulfilled {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+}
+
+.desc_container {
+    flex: 21;
+    align-items: center;
+}
+
+.img_container {
+    flex: 1;
+    align-items: baseline;
+}
+
+.req_desc {
+    float: left;
+}
+
+
+.requirements li {
+    /* background-color: rgba(50,50,50,0.5); */
+    list-style-type: none;
+    margin-bottom: 0.5em;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #999;
+}
+  
+.close-button:hover {
+    color: #555;
+}
+
+
+/* Add media query for responsive design */
+/* For smart phone view everything is centered */
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;
+        align-items: center; /* Center contents */
+    }
+
+    #rqrmnt_title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .example_container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rqrmnt_section {
+        width: 100%; /* Adjust width for mobile view */
+        margin-left: 0; /* Remove left margin for mobile view */
+    }
+    
+    .image-container {
+        margin-top: 20px;
+    }
+}

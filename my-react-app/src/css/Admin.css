@@ -1,0 +1,41 @@
+.admin_button {
+    height: 1.5em;
+    width: 9em;
+    /* background-image: linear-gradient(#fbe1a1, #f0b94b);
+    border: 1px solid #a0772b; */
+    margin-top: 0.5em;
+    background: #f90;
+    border: 2px solid #f90;
+    border-radius: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    cursor: pointer;
+    font-family: 'AmazonEmber-Bold';
+}
+
+.admin-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    width: 50vw;
+    background-color: transparent;
+}
+#selectedImage {
+    flex: 2;
+}
+
+.button_container {
+    flex:1;
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.ListViewList {
+    margin-left: 2em;
+}

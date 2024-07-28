@@ -1,0 +1,50 @@
+.requirements-banner {
+    background-color: #232f3e;
+    color: #ff9900;
+}
+
+.ex_requirements {
+    /* display: grid; */
+    /* font-weight: 500; */
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(14em, auto);
+    grid-gap: 20px;
+    margin: auto 0;
+    background: linear-gradient(to right, #fbe1a18c, #ffffff);
+}
+
+.requirements_title {
+    font-family: 'AmazonEmber-Bold';
+    margin: 0.2em;
+}
+
+.example-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0.1rem solid #fbe1a18c;
+
+}
+
+.ex_img {
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.ex_desc {
+    width: 50%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.actual_image {
+    height: auto;
+    width: 80%;
+}
